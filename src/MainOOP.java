@@ -1,3 +1,6 @@
+import day1_OOP.abstraction.CreditCard;
+import day1_OOP.abstraction.Payment;
+import day1_OOP.abstraction.Paypal;
 import day1_OOP.encapsulation.BankAccount;
 import day1_OOP.inheritance.Cat;
 import day1_OOP.inheritance.Dog;
@@ -43,6 +46,24 @@ public class MainOOP {
         account.deposit(100);
 
         account.displayAccountInfo();
+
+        //------------------------------ENCAPSULATION------------------------------
+
+        System.out.println("---------------------ABSTRACTION---------------------------------");
+
+        System.out.println("---CREDITCARD---");
+        CreditCard card = new CreditCard("Atakan", 2000);
+        card.showBalance();
+        card.pay(400);
+        card.showBalance();
+
+        System.out.println("---PAYPAL---");
+        Paypal paypal = new Paypal("Atakan2",1000);
+
+        paypal.showBalance();
+        paypal.pay(800);
+        paypal.refund(300);
+        paypal.showBalance();
 
     }
 }

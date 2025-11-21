@@ -1,4 +1,5 @@
 import day2_Collections.arrayList.UserStream;
+import day2_Collections.hashMap.CustomerManager;
 import day2_Collections.linkedList.Task;
 import day2_Collections.linkedList.TaskManager;
 
@@ -58,5 +59,36 @@ public class MainCollections {
 
         System.out.println("Has very high priority task? " + manager.hasVeryHighPriorityTask());
         System.out.println("Average priority: " + manager.getAveragePriority());
+
+
+        System.out.println("---HASHMAP---");
+
+        CustomerManager customerManager = new CustomerManager();
+
+        customerManager.addCustomer(1,"Atakan",24);
+        customerManager.addCustomer(2,"Alikaan",25);
+        customerManager.addCustomer(3,"Engin",26);
+        customerManager.addCustomer(4,"Can",24);
+        customerManager.addCustomer(5,"Şakir",28);
+        customerManager.addCustomer(6,"Bedirhan",18);
+
+        System.out.println("--- ALL CUSTOMERS---");
+        customerManager.printAllCustomers();
+
+        System.out.println("---ADULTS---");
+        customerManager.getAdults().forEach(System.out::println);
+
+        System.out.println("---SORTED BY AGE---");
+        customerManager.getSortedByAge().forEach(System.out::println);
+
+        System.out.println("Average age: " + customerManager.getAverageAge());
+
+        System.out.println("---REMOVE CUSTOMER---");
+        customerManager.removeCustomer(4);
+
+        System.out.println("--- UPDATED ALL CUSTOMERS---");
+        customerManager.printAllCustomers();
+
+
     }
 }

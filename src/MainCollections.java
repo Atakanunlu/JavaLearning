@@ -1,7 +1,7 @@
-import day2_Collections.arrayList.UserStream;
-import day2_Collections.hashMap.CustomerManager;
-import day2_Collections.linkedList.Task;
-import day2_Collections.linkedList.TaskManager;
+import part2_Collections.arrayList.UserStream;
+import part2_Collections.hashMap.CustomerManager;
+import part2_Collections.linkedList.Task;
+import part2_Collections.linkedList.TaskManager;
 
 import java.util.ArrayList;
 import java.util.List;

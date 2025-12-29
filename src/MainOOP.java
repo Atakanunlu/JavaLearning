@@ -1,13 +1,12 @@
-import day1_OOP.abstraction.CreditCard;
-import day1_OOP.abstraction.Payment;
-import day1_OOP.abstraction.Paypal;
-import day1_OOP.encapsulation.BankAccount;
-import day1_OOP.inheritance.Cat;
-import day1_OOP.inheritance.Dog;
-import day1_OOP.polymorphism.Developer;
-import day1_OOP.polymorphism.Employee;
-import day1_OOP.polymorphism.Intern;
-import day1_OOP.polymorphism.Manager;
+import part1_OOP.abstraction.CreditCard;
+import part1_OOP.abstraction.Paypal;
+import part1_OOP.encapsulation.BankAccount;
+import part1_OOP.inheritance.Cat;
+import part1_OOP.inheritance.Dog;
+import part1_OOP.polymorphism.Developer;
+import part1_OOP.polymorphism.Employee;
+import part1_OOP.polymorphism.Intern;
+import part1_OOP.polymorphism.Manager;
 
 public class MainOOP {
     public static void main(String[] args) {

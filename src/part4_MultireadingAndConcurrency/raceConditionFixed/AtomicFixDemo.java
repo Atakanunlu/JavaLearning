@@ -15,18 +15,14 @@ public class AtomicFixDemo {
         t2.start();
         t1.join();
         t2.join();
-
         System.out.println("counter: " + counter.get());
 
-
     }
-
     static void incrementManyTimes(){
         for (int i = 0; i<1_000_000; i++){
             counter.incrementAndGet();
         }
     }
-
 }
 // AtomicInteger:
 // Lock kullanmadan thread-safe sayaç sağlar.

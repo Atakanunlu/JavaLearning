@@ -14,11 +14,9 @@ public class RaceConditionDemo {
 
         t1.join();
         t2.join();
-
         System.out.println("counter = " + counter);
 
     }
-
 
     static void incrementManyTimes(){
         for (int i = 0; i<1_000_000; i++){

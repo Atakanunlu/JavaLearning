@@ -5,9 +5,7 @@ import java.util.concurrent.Executors;
 
 public class ExecutorDemo {
     public static void main(String[] args) throws InterruptedException {
-
         ExecutorService pool = Executors.newFixedThreadPool(2);
-
         pool.submit(() -> {
             try {
                 doWork("A");
@@ -29,11 +27,8 @@ public class ExecutorDemo {
                 throw new RuntimeException(e);
             }
         });
-
         pool.shutdown();
-
     }
-
     static void doWork(String name) throws InterruptedException {
         System.out.println(name + " running on " + Thread.currentThread().getName());
         Thread.sleep(800);

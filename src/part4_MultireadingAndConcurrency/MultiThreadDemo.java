@@ -10,7 +10,6 @@ public class MultiThreadDemo {
         t2.start();
 
     }
-
     static void runTask(String name){
 
         try {
@@ -21,9 +20,7 @@ public class MultiThreadDemo {
         }catch (InterruptedException e){
             Thread.currentThread().interrupt();
         }
-
     }
-
 }
 
 // new Thread(...) -> "çalışan" oluşturduk ama daha başlamadı.

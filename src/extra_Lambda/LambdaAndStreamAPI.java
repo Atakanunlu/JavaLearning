@@ -8,6 +8,7 @@ import java.util.stream.Stream;
 public class LambdaAndStreamAPI {
     public static void main(String[] args) {
 
+
 //        Walkable obj = new WalkFast();
 //        obj.walk(4);
 
